@@ -62,7 +62,7 @@ var data2 = [
   var visualization = d3plus.viz()
     .container("#viz3")
     .data(data2)
-    .type("Whisker")
+    .type("box")
     .id("name")
     .x("year")
     .y("value")
