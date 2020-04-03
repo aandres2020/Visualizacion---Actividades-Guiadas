@@ -40,7 +40,7 @@ var data = [
     .axes({"ticks" : false})
     .draw()
 
-var data = [
+var data2 = [
     {"year": 1991, "name":"alpha", "value": 15},
     {"year": 1992, "name":"alpha", "value": 34},
     {"year": 1991, "name":"alpha2", "value": 17},
@@ -58,11 +58,15 @@ var data = [
     {"year": 1991, "name":"delta2", "value": 17},
     {"year": 1992, "name":"delta2", "value": 35}
   ]
+
   var visualization = d3plus.viz()
     .container("#viz3")
-    .type("bar")
+    .data(data2)
+    .type("Whisker")
     .id("name")
     .x("year")
     .y("value")
-    .axes({"ticks" : false})
+    .size("value")
     .draw()
+  
+  
